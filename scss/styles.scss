@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;400;700&display=swap');
+@import 'normalize';
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+a, button{
+    transition: all .3s ease-in-out;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.section-blue{
+    background-color: #70bfff;
+
+}
+.section-yellow{
+    background-color: #ffe92f;
+
+}
+.section-img{
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btns{
+    width: 400px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0;
+
+    &__link{
+        text-decoration: none;
+        text-align: center;
+    }
+    &__items{
+        background-color: #fff;
+        font-size: 20px;
+        margin: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        &:hover{
+            box-shadow: 0 0 10px rgba(0,0,0,0.8);
+        }
+
+    }
+    &__text{
+        color: #000;
+        font-weight: 700;
+        display: flex;
+        
+    }
+    &__suptext{
+        display: block;
+        padding: 40px 20px;
+        border-right: 2px solid #000;
+        width: 80%;
+        margin: auto;
+    }
+    &__logo{
+        display: block;
+        padding: 5px;
+        width: 20%;
+        font-size: 3.5rem;
+        margin: auto;
+    }
+}
+
+.caption{
+    color: #fff;
+    width: 50%;
+    margin: 35px auto;
+    &__bg{
+    background-image: url(../img/tomato.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+    }
+    &__text{
+        font-size: 9rem;
+    }
+}
+.box-btn{
+    width: 50%;
+}
+.caption-gallery{
+    text-align: center;
+    font-size: 9rem;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 100px 0 25px 0;
+}
+.subcaption{
+    max-width: 700px;
+    padding: 30px;
+    margin: 0 auto;
+    &__text{
+        display: inline-block;
+        font-size: 1.7rem;
+        text-align: center;
+        &--sub{
+            max-width: 550px;
+            text-align: left;
+            margin: 30px 0;
+        }
+    }
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    &__item-sm{
+    width: calc(35% - 15px * 2);
+    height: 550px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    &-1-2{
+        width: 100%;
+        height: calc(550px / 2 - 15px);
+        margin: 0;
+        overflow: hidden;
+        box-shadow: 0 0 5px rgba(0,0,0,0.8);
+        }
+    }
+    &__items-65{
+        width: calc(65% - 15px * 2);
+        height: 550px;
+        margin: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 5px rgba(0,0,0,0.8);
+    }
+    &__items-50{
+        width: calc(50% - 15px * 2);
+        height: 400px;
+        margin: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 5px rgba(0,0,0,0.8);
+    }
+    &__img{
+        min-width: 100%;
+    }
+    &__btns{
+        margin: 0 auto;
+
+    }
+}
+.btn{
+    margin: 45px auto;
+    padding: 15px;
+    width: 180px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+    border: 2px solid #5585a2;
+    background-color: #5585a2;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 3px rgba(0,0,0,0.8);
+    &--sub{
+        background-color: #96b92c;
+        &:hover{
+            color: #5585a2;
+            background-color: transparent;
+            box-shadow: none;
+        }
+    }
+    cursor: pointer;
+    &:hover{
+        background-color: transparent;
+        box-shadow: none;
+        }
+}
+.caption-sub{
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 10px 0;
+    margin: 140px 0 0 0;
+}
+.form{
+    margin: 0;
+    &__email{
+        outline: none;
+        border: 2px solid #5585a2;
+        height: 54px;
+        width: 570px;
+        font-size: 15px;
+        padding: 0 15px;
+        margin-right: 30px;
+        &:active,        
+        &:focus{
+            border-color: transparent;
+            border-bottom: 2px solid #5585a2;
+        }
+    }
+}
